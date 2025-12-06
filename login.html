@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <meta name="description" content="Bejelentkezési űrlap a SakkMindenkié weboldalra.">
+    <meta name="author" content="EXNGOK">
+    <link rel="stylesheet" href="css/sakkoldal.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+</head>
+<body>
+    <header class="logo">
+        <a href="jatek.html">
+            <img src="media/logo.png" alt="SakkMindenkié">
+        </a>
+    </header>
+
+    <a href="kezdolap.html" class="btn-home">Vissza a kezdőlapra</a>
+
+    <div class="chess-container">
+        <h1 class="page-title">Bejelentkezés</h1>
+
+        <!-- Bejelentkezési űrlap -->
+        <form id="loginForm">
+
+            <label for="username">Felhasználónév:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Jelszó:</label>
+            <input type="password" id="password" name="password">
+
+            <button type="button" id="loginBtn" class="btn">Bejelentkezés</button>
+
+            <p class="message" id="message"></p>
+        </form>
+    </div>
+
+    <script>
+        // Bejelentkezés gomb és üzenet
+        const loginBtn = document.getElementById('loginBtn');
+        const message = document.getElementById('message');
+
+        // Teszt felhasználók
+        const users = [
+            { username: 'adam', password: '1234' },
+            { username: 'admin', password: 'admin' }
+        ];
+
+        // Login logika
+        loginBtn.onclick = function() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            const user = users.find(u => u.username === username && u.password === password);
+
+            if (user) {
+                message.textContent = "Sikeres bejelentkezés!";
+                message.style.color = "green";
+            } else {
+                message.textContent = "Hibás felhasználónév vagy jelszó!";
+                message.style.color = "red";
+            }
+        };
+    </script>
+
+</body>
+</html>

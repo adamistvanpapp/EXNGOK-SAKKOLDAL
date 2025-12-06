@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Játék menü</title>
+    <meta name="description" content="A SakkMindenkié weboldal játékmenüje, ahol elérheted a kvízt és az online játék lehetőségét.">
+    <meta name="author" content="EXNGOK">
+    <link rel="stylesheet" href="css/sakkoldal.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    
+</head>
+<body>
+
+<header class="logo">
+    <a href="jatek.html"><img src="media/logo.png" alt="SakkMindenkié"></a>
+
+    <!-- Hamburger (jobb felső sarok) -->
+    <div class="header-actions">
+        
+        <div class="hamburger-container">
+            <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menü">&#9776;</button>
+
+            <nav id="hamburgerMenu" class="hamburger-menu" aria-hidden="true">
+                <ul>
+                    <li><a href="tanulas.html">Tanulás</a></li>
+                    <li><a href="jatekszabalyok.html">Játékszabályok</a></li>
+                    <li><a href="legjobbjatekosok.html">Legjobb játékos</a></li>
+                    <li><a href="login.html">Bejelentkezés</a></li>
+                    <li><a href="regisztracio.html">Regisztráció</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<a href="kezdolap.html" class="btn-home">Vissza a kezdőlapra</a>
+
+<div class="menu-image-container">
+
+    <a href="quiz.html">
+        <img src="media/quiz.png" alt="Quiz" class="menu-image">
+    </a>
+
+    <a href="https://www.chess.com/play/online" target="_blank">
+        <img src="media/onlinejatek.png" alt="Online játék" class="menu-image">
+    </a>
+
+    <button class="btn-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    Oldal tetejére
+</button>
+</div>
+
+<script src="js/hamburger.js"></script>
+
+</body>
+</html>
+
+

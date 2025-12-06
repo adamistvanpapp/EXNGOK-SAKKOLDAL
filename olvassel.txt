@@ -1,0 +1,9 @@
+A "Sakk Mindenkinek" oldal azoknak készült, akik szeretnék megtanulni a sakk alapjait vagy fejleszteni szeretnék a tudásukat. Az oldal négy fő aloldallal rendelkezik:
+
+- Játék: Sakk Quiz és Online Játék lehetőségek.
+
+- Tanulás: Tippek a kezdéshez, oktatóvideók, könyvek és sakk klubok.
+
+- Szabályok: A sakk alapvető játékszabályainak ismertetése.
+
+- Értékelés: Információk a játékosok ELO-pontszámáról és rangsorolásáról.

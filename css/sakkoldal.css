@@ -1,0 +1,482 @@
+/*Fontok importálása*/
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+/*ALAP STÍLUSOK*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d2d0d0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* LOGÓ */
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+/* FŐMENÜ */
+nav ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul.menu li {
+    flex: 0 0 45%; /* mobil: 2x2 */
+    text-align: center;
+}
+
+nav ul.menu li img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+nav ul.menu li img:hover {
+    border: 2px solid black;
+}
+
+/* JÁTÉK OLDAL KÉPEK */
+
+.menu-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* FŐ TARTALMI DOBOZ */
+
+.chess-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ffffffcc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.page-title {
+    text-align: center;
+    color: #111;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #333;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-text {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* SZABÁLYOK ÉS KÉPEK */
+
+.rules-section.row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.rules-section.row .text {
+    flex: 1;
+}
+
+.szabalykep,
+.rule-img {
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* GOMBOK */
+
+.btn-home, .btn-top {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Audiowide', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+.btn-home:hover, .btn-top:hover {
+    background-color: #222;
+}
+
+.btn {
+    font-family: 'Audiowide', Arial, sans-serif;
+}
+
+/* QUIZ STÍLUSOK */
+
+.quiz-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.quiz-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-btn {
+    padding: 12px;
+    background: #eaeaea;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.answer-btn:hover {
+    background: #dcdcdc;
+}
+
+.answer-btn.correct {
+    background: #82d676;
+    color: white;
+}
+
+.answer-btn.wrong {
+    background: #e86e6e;
+    color: white;
+}
+
+#next-btn {
+    padding: 12px 25px;
+    margin: 20px auto 0;
+    display: block;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Audiowide', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#next-btn:hover {
+    background-color: #222;
+}
+
+.hidden {
+    display: none;
+}
+
+#question-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto;
+}
+
+#result-box {
+    text-align: center;
+}
+
+/* Elo táblázat stilusok */
+
+.chess-table-container {
+    margin-top: 40px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.chess-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    font-size: 1rem;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+.chess-table thead {
+    background: #1e1e1e;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.chess-table th {
+    padding: 18px 20px;
+    border-bottom: 2px solid #1b2537;
+}
+
+/* Táblázat zebra csikozása */
+
+.chess-table tbody tr:nth-child(odd) {
+    background: #f6f6f6;
+}
+
+.chess-table tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+.chess-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+
+/*LOGIN ÉS REGISZTRÁCIÓ FORMOK*/
+
+
+.chess-container form {
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chess-container form input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.chess-container form input:focus {
+    border-color: #444;
+    box-shadow: 0 0 5px rgba(68,68,68,0.4);
+    outline: none;
+}
+
+.chess-container form button {
+    padding: 12px 25px;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.chess-container form button:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+}
+
+.chess-container form .message {
+    font-size: 14px;
+    color: rgb(24, 154, 35);
+    text-align: center;
+}
+
+/* Reszponzív formok mobilon */
+@media (max-width: 480px) {
+    .chess-container form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .chess-container form input,
+    .chess-container form button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+
+/*Desktop media query*/
+
+@media (min-width: 768px) {
+
+    .logo img {
+        max-width: 260px;
+    }
+
+    nav ul.menu li {
+        flex: 0 0 45%;
+    }
+
+    .chess-container {
+        padding: 30px;
+    }
+
+    .rules-section.row {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .rule-img {
+        max-width: 45%;
+        margin: 10px;
+    }
+
+    .menu-image-container img {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .elo-table {
+        font-size: 1.05rem;
+    }
+
+    .elo-table th,
+    .elo-table td {
+        padding: 18px 20px;
+    }
+}
+
+/* header jobb felső akciók (vissza gomb + hamburger) */
+.header-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    z-index: 1200;
+}
+
+/* kisebb, inline megjelenésű vissza gomb a headerben */
+.header-actions .btn-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.header-actions .btn-home:hover {
+    background-color: #222;
+}
+
+/* hamburger gomb stílus */
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 1;
+    padding: 6px;
+    color: #111;
+}
+
+/* hamburger menü doboza (alap: rejtve) */
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    z-index: 1300;
+    min-width: 140px;
+}
+
+/* listázás a menüben */
+.hamburger-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.hamburger-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: #111;
+    text-decoration: none;
+}
+
+.hamburger-menu a:hover {
+    background: #f5f5f5;
+}
+
+/* mobilon kisebb header-távolság */
+@media (max-width: 480px) {
+    .header-actions {
+        top: 8px;
+        right: 8px;
+        gap: 6px;
+    }
+
+    .header-actions .btn-home {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+}

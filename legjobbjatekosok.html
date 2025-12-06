@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legjobb játékosok</title>
+    <meta name="description" content="Ismerd meg a legjobb sakkjátékosokat és az ELO rendszert.">
+    <meta name="author" content="EXNGOK">
+    <link rel="stylesheet" href="css/sakkoldal.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+</head>
+<body>
+
+<header class="logo">
+    <a href="jatek.html"><img src="media/logo.png" alt="SakkMindenkié"></a>
+
+    <!-- Hamburger (jobb felső sarok) -->
+    <div class="header-actions">
+        
+        <div class="hamburger-container">
+            <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menü">&#9776;</button>
+
+            <nav id="hamburgerMenu" class="hamburger-menu" aria-hidden="true">
+                <ul>
+                    <li><a href="jatek.html">Játék</a></li>
+                    <li><a href="tanulas.html">Tanulás</a></li>
+                    <li><a href="jatekszabalyok.html">Játékszabályok</a></li>
+                    <li><a href="login.html">Bejelentkezés</a></li>
+                    <li><a href="regisztracio.html">Regisztráció</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<a href="kezdolap.html" class="btn-home">Vissza a kezdőlapra</a>
+
+<main class="chess-container">
+    <h1 class="page-title">Legjobb sakkjátékosok</h1>
+
+    <!-- Jelenlegi ELO lista -->
+    <div class="rule-block">
+        <div class="rule-text">
+            <h2 class="section-title">Az "ELO" rendszer</h2>
+            <p class="section-text">
+                Az ELO-rendszer egy pontozási rendszer, amelyet a játékosok erősségének mérésére használnak. 
+                Minél magasabb az ELO pontszám, annál erősebb a játékos.  
+                Például Magnus Carlsen ELO pontszáma 2850 körül mozog, ami a világ élvonalát jelzi.  
+                Az ELO-rendszer figyelembe veszi a győzelmeket, vereségeket és döntetleneket is, és az ellenfél 
+                erősségétől függően adja vagy vonja le a pontokat.
+            </p>
+        </div>
+    </div>
+
+    <!-- Jelenlegi ELO lista táblázat -->
+     <div class="chess-container">
+        <table class="chess-table">
+            <thead>
+                <tr>
+                    <th class="chess-name-col">Név</th>
+                    <th class="chess-elo-col">Elo</th>
+                    <th class="chess-country-col">Ország</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carlsen, Magnus</td>
+                    <td>2840</td>
+                    <td>NOR</td>
+                </tr>
+                <tr>
+                    <td>Nakamura, Hikaru</td>
+                    <td>2810</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Caruana, Fabiano</td>
+                    <td>2795</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Keymer, Vincent</td>
+                    <td>2776</td>
+                    <td>GER</td>
+                </tr>
+                <tr>
+                    <td>Erigaisi Arjun</td>
+                    <td>2775</td>
+                    <td>IND</td>
+                </tr>
+                <tr>
+                    <td>Firouzja, Alireza</td>
+                    <td>2762</td>
+                    <td>FRA</td>
+                </tr>
+                <tr>
+                    <td>Praggnanandhaa R</td>
+                    <td>2761</td>
+                    <td>IND</td>
+                </tr>
+                <tr>
+                    <td>Giri, Anish</td>
+                    <td>2760</td>
+                    <td>NED</td>
+                </tr>
+                <tr>
+                    <td>Wei, Yi</td>
+                    <td>2754</td>
+                    <td>CHN</td>
+                </tr>
+                <tr>
+                    <td>Gukesh D</td>
+                    <td>2754</td>
+                    <td>IND</td>
+                </tr>
+                <tr>
+                    <td>So, Wesley</td>
+                    <td>2753</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Anand, Viswanathan</td>
+                    <td>2743</td>
+                    <td>IND</td>
+                </tr>
+                <tr>
+                    <td>Rapport, Richard</td>
+                    <td>2741</td>
+                    <td>HUN</td>
+                </tr>
+                <tr>
+                    <td>Dominguez Perez, Leinier</td>
+                    <td>2738</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Vachier-Lagrave, Maxime</td>
+                    <td>2734</td>
+                    <td>FRA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Egyéb jelenlegi kiemelkedő játékosok -->
+    <div class="rule-block">
+        <div class="rule-text">
+            <h2 class="section-title">Jelenlegi kiemelkedő játékosok</h2>
+            <p class="section-text">
+                A mai sakkvilágban több nagymester is kiemelkedik.  
+                Magnus Carlsen, Fabiano Caruana, Ding Liren, Ian Nepomniachtchi és más top 10-es játékosok rendszeresen szerepelnek 
+                a nemzetközi versenyeken, és szoros küzdelmet folytatnak a világelsőségért.
+            </p>
+        </div>
+        <img class="rule-img" src="media/magnuscarlsen.png" alt="Magnus Carlsen">
+    </div>
+
+    <!-- Garry Kasparov -->
+    <div class="rule-block">
+        <div class="rule-text">
+            <h2 class="section-title">Garry Kasparov</h2>
+            <p class="section-text">
+                Garry Kasparov a modern sakk egyik legendája.  
+                1985 és 2000 között volt világbajnok, és jelentős hatást gyakorolt a sakk fejlődésére.  
+                Kiemelkedett a számítógépes sakk és a stratégiai játéktervezés terén is.
+            </p>
+        </div>
+        <img class="rule-img" src="media/garrykasparov.png" alt="Garry Kasparov">
+    </div>
+
+    <!-- Bobby Fischer -->
+    <div class="rule-block">
+        <div class="rule-text">
+            <h2 class="section-title">Bobby Fischer</h2>
+            <p class="section-text">
+                Bobby Fischer az amerikai sakk egyik ikonikus alakja.  
+                1972-ben világbajnok lett Boris Spassky ellen, ezzel véget vetve a szovjet dominanciának.  
+                Taktikai érzéke és kreativitása ma is példaértékű a sakkozók számára.
+            </p>
+        </div>
+        <img class="rule-img" src="media/bobbyfischer.png" alt="Bobby Fischer">
+    </div>
+
+    <!-- Polgár Judit -->
+    <div class="rule-block">
+        <div class="rule-text">
+            <h2 class="section-title">Polgár Judit</h2>
+            <p class="section-text">
+                Polgár Judit a történelem legerősebb női sakkozója, és Magyarország büszkesége.  
+                Már gyermekkorában kimagasló eredményeket ért el, és első nőként került be a férfi nagymesterek közé.  
+                Számos férfi nagymestert is legyőzött, és 1991-ben megszerezte a nagymesteri címet.  
+                Magyarországon több sakkversenyen is ő a minta, és a női sakk népszerűsítésében kulcsszerepet játszott.
+            </p>
+        </div>
+        <img class="rule-img" src="media/polgarjudit.png" alt="Polgár Judit">
+    </div>
+
+<button class="btn-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    Oldal tetejére
+</button>
+
+</main>
+
+<script src="js/hamburger.js"></script>
+</body>
+</html>
