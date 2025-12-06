@@ -7,9 +7,13 @@ Weboldal témája:
 A "Sakk Mindenkinek" oldal azoknak készült, akik szeretnék megtanulni a sakk alapjait vagy fejleszteni szeretnék a tudásukat. Az oldal négy fő aloldallal rendelkezik: Játék (Sakk Quiz, Online Játék lehetőségek), Tanulás (Tippek a kezdéshez, oktatóvideók, sakk klubok és könyvek), Szabályok (A sakk alapvető szabályainak ismertetése) és Értékelés (Információ az "ELO"-ról és a játékosok rangsorolásáról).
 
 JavaScript leírása: 
-Quiz: A Quiz JavaScriptbe, megvannak adva a kérdések (JSON tömbben) és a helyes válaszok index alapján (0-tól indul). Ezek után a kérdéseket index alapján random sorrendben teszi és a helyes válaszok számát egy változó menti (az összes kérdések száma a JSON tábla hossza), majd betölti a kérdést (image-t csak akkor ha van kép a kérdésben). Amint vége a játéknak, megjeleníti az újra gombot amivel a játékot újra tudjuk kezdeni
-Hamburger Menü:
-Regisztráció validálása: 
+- Quiz: A Quiz JavaScriptbe, megvannak adva a kérdések (JSON tömbben) és a helyes válaszok index alapján (0-tól indul). Ezek után a kérdéseket index alapján random sorrendben teszi és a helyes válaszok számát egy változó menti (az összes kérdések száma a JSON tábla hossza), majd betölti a kérdést (image-t csak akkor ha van kép a kérdésben). Amint vége a játéknak, megjeleníti az újra gombot amivel a játékot újra tudjuk kezdeni
+
+- Hamburger Menü: A kód a hamburger ikon (hamburgerBtn) megnyomására kinyitja vagy bezárja a menüt (hamburgerMenu) azzal, hogy váltogatja a display: block és display: none értékeket. Ha a felhasználó a menün kívülre kattint, vagy megnyomja az Escape gombot, a menü automatikusan bezáródik.
+
+- Regisztráció validálása: A kód a regisztráció gomb (registerBtn) kattintására ellenőrzi a felhasználó által megadott adatokat. Ellenőrzi, hogy a felhasználónév legalább 5 karakter, a jelszó legalább 8 karakter, a születési dátum alapján a felhasználó legalább 10 éves, az email cím tartalmazza az @ és . jeleket, a telefonszám tartalmaz + vagy - jelet, és hogy a nem és a kontinens ki legyen választva. Ha bármelyik feltétel nem teljesül, hibaüzenetet ad; ha minden rendben van, zöld színű üzenet jelenik meg: „Regisztráció sikeres!”.
+
+- Login validálása: A kód a bejelentkezés gomb (loginBtn) kattintására ellenőrzi a felhasználó által megadott felhasználónevet és jelszót a users tömbben tárolt teszt felhasználókkal. 
 
 Egyedi font típus: AudioWide - https://fonts.googleapis.com/css?family=Audiowide (külső importálás)
 
