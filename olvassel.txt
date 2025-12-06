@@ -1,15 +1,17 @@
 Készítő neve:
 EXNGOK -> Papp Ádám István
 
-GitHub link: https://adamistvanpapp.github.io/EXNGOK-SAKKOLDAL/index.html
+Működő weboldal URL linkje: https://adamistvanpapp.github.io/EXNGOK-SAKKOLDAL/index.html
 
 Weboldal témája:
 A "Sakk Mindenkinek" oldal azoknak készült, akik szeretnék megtanulni a sakk alapjait vagy fejleszteni szeretnék a tudásukat. Az oldal négy fő aloldallal rendelkezik: Játék (Sakk Quiz, Online Játék lehetőségek), Tanulás (Tippek a kezdéshez, oktatóvideók, sakk klubok és könyvek), Szabályok (A sakk alapvető szabályainak ismertetése) és Értékelés (Információ az "ELO"-ról és a játékosok rangsorolásáról).
 
 JavaScript leírása: 
-A Quiz JavaScriptbe, megvannak adva a kérdések (JSON tömbben) és a helyes válaszok index alapján (0-tól indul). Ezek után a kérdéseket index alapján random sorrendben teszi és a helyes válaszok számát egy változó menti (az összes kérdések száma a JSON tábla hossza), majd betölti a kérdést (image-t csak akkor ha van kép a kérdésben). Amint vége a játéknak, megjeleníti az újra gombot amivel a játékot újra tudjuk kezdeni
+Quiz: A Quiz JavaScriptbe, megvannak adva a kérdések (JSON tömbben) és a helyes válaszok index alapján (0-tól indul). Ezek után a kérdéseket index alapján random sorrendben teszi és a helyes válaszok számát egy változó menti (az összes kérdések száma a JSON tábla hossza), majd betölti a kérdést (image-t csak akkor ha van kép a kérdésben). Amint vége a játéknak, megjeleníti az újra gombot amivel a játékot újra tudjuk kezdeni
+Hamburger Menü:
+Regisztráció validálása: 
 
-Egyedi font típus: AudioWide - https://fonts.googleapis.com/css?family=Audiowide
+Egyedi font típus: AudioWide - https://fonts.googleapis.com/css?family=Audiowide (külső importálás)
 
 Külső segítség:
-AI-t (ChatGPT) a quiz, a "hamburger" menü és a forms-ban lévő minimális JavaScript készítésére használtam ezenkívül, a CSS-ben is kértem tőle segítséget ha nem úgy nézett ki az oldal, ahogy szerettem volna.
+AI-t (ChatGPT) a quiz, a "hamburger" menü és a forms-ban lévő minimális JavaScript készítésére használtam ezenkívül, a CSS-ben is kértem tőle segítséget ha nem úgy nézett ki az oldal, ahogy szerettem volna. A használt szövegek/képek a Wikipédiáról származnak. A quiz kérdések feladványai a Chess.com-ról származnak.

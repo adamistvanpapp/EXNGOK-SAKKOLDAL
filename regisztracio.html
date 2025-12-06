@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regisztráció</title>
     <link rel="stylesheet" href="css/sakkoldal.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 <body>
 
@@ -59,75 +60,6 @@
     </form>
 </div>
 
-<script>
-    const registerBtn = document.getElementById('registerBtn');
-    const message = document.getElementById('message');
-
-    registerBtn.onclick = function() {
-        const username = document.getElementById('username').value.trim();
-        const password = document.getElementById('password').value.trim();
-        const birthdate = document.getElementById('birthdate').value;
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const gender = document.querySelector('input[name="gender"]:checked');
-        const continent = document.getElementById('continent').value;
-
-        // Felhasználónév minimum 5 karakter
-        if (username.length < 5) {
-            alert("A felhasználónévnek legalább 5 karakter hosszúnak kell lennie!");
-            return;
-        }
-
-        // Jelszó minimum 8 karakter
-        if (password.length < 8) {
-            alert("A jelszónak legalább 8 karakter hosszúnak kell lennie!");
-            return;
-        }
-
-        // Születési dátum - legalább 13 éves
-        if (!birthdate) {
-            alert("Kérlek add meg a születési dátumod!");
-            return;
-        }
-        const birth = new Date(birthdate);
-        const now = new Date();
-        const age = now.getFullYear() - birth.getFullYear();
-        const monthCheck = now.getMonth() - birth.getMonth();
-
-        if (age < 10 || (age === 10 && monthCheck < 0)) {
-            alert("A regisztrációhoz legalább 13 évesnek kell lenned!");
-            return;
-        }
-
-        // Email ellenőrzés
-        if (!email.includes("@")) {
-            alert("Az email címnek tartalmaznia kell '@' jelet!");
-            return;
-        }
-
-        // Telefonszám ellenőrzése (+ vagy -)
-        if (!phone.includes("+") && !phone.includes("-")) {
-            alert("A telefonszámnak tartalmaznia kell '+' vagy '-' jelet!");
-            return;
-        }
-
-        // Nem választás kötelező
-        if (!gender) {
-            alert("Kérlek válaszd ki a nemed!");
-            return;
-        }
-
-        // Kontinens kötelező
-        if (continent === "") {
-            alert("Kérlek válassz kontinenset!");
-            return;
-        }
-
-        // Siker
-        message.textContent = "Regisztráció sikeres!";
-        message.style.color = "green";
-    };
-</script>
-
+<script src="js/register.js"></script>
 </body>
 </html>

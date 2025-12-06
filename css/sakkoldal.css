@@ -241,16 +241,16 @@ nav ul.menu li img:hover {
 
 .chess-table-container {
     margin-top: 40px;
-    overflow-x: auto;
+    overflow-x: auto; 
     padding: 10px 0;
 }
 
 .chess-table {
     width: 100%;
+    min-width: 600px; 
     border-collapse: collapse;
     background: #ffffff;
     border-radius: 14px;
-    overflow: hidden;
     font-size: 1rem;
     box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
@@ -269,8 +269,7 @@ nav ul.menu li img:hover {
     border-bottom: 2px solid #1b2537;
 }
 
-/* Táblázat zebra csikozása */
-
+/* Zebra csíkozás */
 .chess-table tbody tr:nth-child(odd) {
     background: #f6f6f6;
 }
@@ -283,6 +282,7 @@ nav ul.menu li img:hover {
     padding: 16px 20px;
     border-bottom: 1px solid #dcdcdc;
 }
+
 
 
 /*LOGIN ÉS REGISZTRÁCIÓ FORMOK*/
@@ -337,62 +337,7 @@ nav ul.menu li img:hover {
     text-align: center;
 }
 
-/* Reszponzív formok mobilon */
-@media (max-width: 480px) {
-    .chess-container form {
-        padding: 20px;
-        margin: 10px;
-    }
 
-    .chess-container form input,
-    .chess-container form button {
-        font-size: 0.95rem;
-        padding: 10px;
-    }
-}
-
-
-/*Desktop media query*/
-
-@media (min-width: 768px) {
-
-    .logo img {
-        max-width: 260px;
-    }
-
-    nav ul.menu li {
-        flex: 0 0 45%;
-    }
-
-    .chess-container {
-        padding: 30px;
-    }
-
-    .rules-section.row {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .rule-img {
-        max-width: 45%;
-        margin: 10px;
-    }
-
-    .menu-image-container img {
-        max-width: 800px;
-        width: 100%;
-    }
-
-    .elo-table {
-        font-size: 1.05rem;
-    }
-
-    .elo-table th,
-    .elo-table td {
-        padding: 18px 20px;
-    }
-}
 
 /* header jobb felső akciók (vissza gomb + hamburger) */
 .header-actions {
@@ -467,6 +412,63 @@ nav ul.menu li img:hover {
     background: #f5f5f5;
 }
 
+/* Reszponzív formok mobilon */
+@media (max-width: 480px) {
+    .chess-container form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .chess-container form input,
+    .chess-container form button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+
+/*Desktop media query*/
+
+@media (min-width: 768px) {
+
+    .logo img {
+        max-width: 260px;
+    }
+
+    nav ul.menu li {
+        flex: 0 0 45%;
+    }
+
+    .chess-container {
+        padding: 30px;
+    }
+
+    .rules-section.row {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .rule-img {
+        max-width: 45%;
+        margin: 10px;
+    }
+
+    .menu-image-container img {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .elo-table {
+        font-size: 1.05rem;
+    }
+
+    .elo-table th,
+    .elo-table td {
+        padding: 18px 20px;
+    }
+}
+
 /* mobilon kisebb header-távolság */
 @media (max-width: 480px) {
     .header-actions {
@@ -478,5 +480,13 @@ nav ul.menu li img:hover {
     .header-actions .btn-home {
         padding: 6px 10px;
         font-size: 0.85rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .chess-table th, .chess-table td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
     }
 }
