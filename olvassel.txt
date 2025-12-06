@@ -1,9 +1,15 @@
-A "Sakk Mindenkinek" oldal azoknak készült, akik szeretnék megtanulni a sakk alapjait vagy fejleszteni szeretnék a tudásukat. Az oldal négy fő aloldallal rendelkezik:
+Készítő neve:
+EXNGOK -> Papp Ádám István
 
-- Játék: Sakk Quiz és Online Játék lehetőségek.
+GitHub link: https://adamistvanpapp.github.io/EXNGOK-SAKKOLDAL/index.html
 
-- Tanulás: Tippek a kezdéshez, oktatóvideók, könyvek és sakk klubok.
+Weboldal témája:
+A "Sakk Mindenkinek" oldal azoknak készült, akik szeretnék megtanulni a sakk alapjait vagy fejleszteni szeretnék a tudásukat. Az oldal négy fő aloldallal rendelkezik: Játék (Sakk Quiz, Online Játék lehetőségek), Tanulás (Tippek a kezdéshez, oktatóvideók, sakk klubok és könyvek), Szabályok (A sakk alapvető szabályainak ismertetése) és Értékelés (Információ az "ELO"-ról és a játékosok rangsorolásáról).
 
-- Szabályok: A sakk alapvető játékszabályainak ismertetése.
+JavaScript leírása: 
+A Quiz JavaScriptbe, megvannak adva a kérdések (JSON tömbben) és a helyes válaszok index alapján (0-tól indul). Ezek után a kérdéseket index alapján random sorrendben teszi és a helyes válaszok számát egy változó menti (az összes kérdések száma a JSON tábla hossza), majd betölti a kérdést (image-t csak akkor ha van kép a kérdésben). Amint vége a játéknak, megjeleníti az újra gombot amivel a játékot újra tudjuk kezdeni
 
-- Értékelés: Információk a játékosok ELO-pontszámáról és rangsorolásáról.
+Egyedi font típus: AudioWide - https://fonts.googleapis.com/css?family=Audiowide
+
+Külső segítség:
+AI-t (ChatGPT) a quiz, a "hamburger" menü és a forms-ban lévő minimális JavaScript készítésére használtam ezenkívül, a CSS-ben is kértem tőle segítséget ha nem úgy nézett ki az oldal, ahogy szerettem volna.
